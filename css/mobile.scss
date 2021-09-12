@@ -1,0 +1,233 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+// Color
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue : hsl(198, 62%, 26%);
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+
+@media screen and (max-width: 375px) {
+    header {
+        background: url('../images/mobile/image-header.jpg') center no-repeat;
+        background-size: 150%;
+    }
+    .desktop-nav-bar {
+        display: none;
+    }
+    .mobile-logo {
+        display: block;
+        margin: 27px 20px;
+    }
+    .header-title {
+        font-size: 2em;
+        padding-top: 4.8em;
+    }
+    .header-arrow {
+        margin-top: 2em;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+    .mobile-nav-bar {
+        position: absolute;
+        z-index: 99;
+        text-align: center;
+        margin-left: 19px;
+        margin-top: 20px;
+        background: #fff;
+        width: 331px;
+        height: 300px;
+        padding: 40px 0;
+        padding-top: 20px;
+        display: block;
+        opacity: 0;
+        transform: translateY(-7px);
+        transition: opacity 120ms ease-in, transform 100ms ease-in;
+
+        li {
+            list-style: none;
+            padding: 15px 0;
+
+            a {
+                text-decoration: none;
+                color: $dark-grayish-blue;
+                font-family: 'Barlow', sans-serif;
+            }
+        }
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 1.6rem solid transparent;
+            border-bottom: 1.3rem solid white;
+            position: relative;
+            top: -3.5em;
+            left: 151px;
+        }
+    }
+    .header-btn {
+        background: $yellow;
+        padding: .9rem 1.5rem;
+        font-size: .7em;
+        margin-top: 10px;
+
+        &:hover,
+        &:active {
+            background: $yellow;
+            color: black;
+        }
+    }
+    .burger {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+        width: 6%;
+        right: 20px;
+        top: 30px;
+        cursor: pointer;
+
+        div {
+            background: url('../images/icon-hamburger.svg') no-repeat;
+            height: 8px;
+        }
+    }
+    .active {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: transform 200ms, opacity 200ms ease;
+
+        & + .burger .line1 {
+            transform: rotate(-45deg) translate(-1px, 6px);
+        }
+        & + .burger .line2 {
+            transform: translateX(-15px);
+            opacity: 0;
+        }
+        & + .burger .line3 {
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    }
+    .line2 {
+        transition: transform .6s, opacity 300ms steps(3);
+    }
+
+    .line1,
+    .line3 {
+        transition: transform 300ms;
+    }
+    .features-grid {
+        margin-top: -68px;
+        grid-template-columns: 375px;
+        grid-template-rows: 424px 384px 424px 384px 580px 580px;
+    }
+    .img-box {
+        display: none;
+    }
+    .img-box-mobile {
+        display: block;
+    }
+    .first-img-mobile {
+        background: url('../images/mobile/image-transform.jpg') center no-repeat;
+        height: 100%;
+        background-size: 100%;
+    }
+    .second-img-mobile {
+        background: url('../images/mobile/image-stand-out.jpg') center no-repeat;
+        height: 100%;
+        background-size: 100%;
+    }
+
+    .feature-box {
+        text-align: center;
+        padding:  10px 20px;
+    }
+    .box-title {
+        font-size: 29px;
+        padding: 20px;
+    }
+    .box-content {
+        width: 19.725em;
+        padding-left: 0px;
+    }
+    .feature-btn {
+        padding-left: 18px;
+    }
+    .feature-btn-underline {
+        margin-left: 100px;
+    }
+    .graphics {
+        text-align: center;
+    }
+    .cherry {
+        background: url('../images/mobile/image-graphic-design.jpg');
+        background-size: 100%; 
+    }
+    .orange {
+        background: url('../images/mobile/image-photography.jpg');
+        background-size: 100%; 
+    }
+    .graphics__content {
+        margin-left: -2px;
+        font-size: medium;
+    }
+    .how-do-people-say {
+        flex-direction: column;
+
+        div {
+            margin-top: 20px;
+
+            p {
+                width: 333px;
+            }
+        }
+    }
+    .footer-img {
+        display: grid;
+        grid-template-columns: 187.5px 187.5px;
+        grid-template-rows: 187.5px 187.5px;
+
+        div {
+            background-size: 53% !important;
+            background-repeat: no-repeat !important;
+        }
+
+        & :nth-child(1) {
+            background: url('../images/mobile/image-gallery-milkbottles.jpg');
+        }
+        & :nth-child(2) {
+            background: url('../images/mobile/image-gallery-orange.jpg')
+        }
+        & :nth-child(3) {
+            background: url('../images/mobile/image-gallery-cone.jpg')
+        }
+        & :nth-child(4) {
+            background: url('../images/mobile/image-gallery-sugar-cubes.jpg')
+        }
+    }
+    .logo--footer {
+        width: 40%;
+        margin: 0;
+    }
+    .footer-nav {
+        margin-left: -40px;
+
+        li {
+            margin: 45px 27px;
+        }
+    }
+    .contact-us {
+        margin-left: -35px;
+    }
+    .attribution {
+        text-align: center;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Sunnyside agency landing page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+</head>
+<!-- I have a little request, you can visit my channel> It's about how do I finish Frontend Mentor challenge  -->
+<!-- Here is the link: https://www.youtube.com/channel/UC-yrADOr74m95DfGroH_zXw.
+	Enjoy my video and have a good coding day -->
+<body>
+	<img src="images/logo.svg" alt="logo" class="mobile-logo">
+	<div class="mobile-nav-bar" id="navbar">
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Projects</a></li>
+			<button class="header-btn">Contact</button>
+		</ul>
+	</div>
+	<div class="burger" id="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+	<nav class="desktop-nav-bar">
+		<div class="logo-div">
+			<img src="images/logo.svg" alt="logo" class="logo">
+		</div>
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Projects</a></li>
+			<button class="header-btn">Contact</button>
+		</ul>
+	</nav>
+	<header>
+		<div class="header-title">We are creatives</div>
+		<div class="header-arrow">
+			<img src="images/icon-arrow-down.svg" alt="arrow">
+		</div>
+	</header>
+	<section class="features-grid"> <!-- a bit messy -->
+		<div class="img-box-mobile">
+			<div class="first-img-mobile"></div>
+		</div>
+		<div class="feature-box  first-content-box">
+			<h1 class="box-title">Transform your brand</h1>
+			<p class="box-content">
+				We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
+				through compelling visuals that do most of the marketing for you.
+			</p>
+			<a href="#" class="feature-btn">Learn more</a>
+			<div class="feature-btn-underline yellow-underline"></div>
+		</div>
+		<div class="img-box">
+			<div class="first-img"></div>
+		</div>
+		<div class="img-box">
+			<div class="second-img"></div>
+		</div>
+		<div class="img-box-mobile">
+			<div class="second-img-mobile"></div>
+		</div>
+		<div class="feature-box second-content-box">
+			<h1 class="box-title">Stand out to the right audience</h1>
+			<p class="box-content">Using a collaborative formula of designers, researchers, photographers,
+				videographers, and copywriters, we’ll build
+				and extend your brand in digital places.</p>
+			<a href="#" class="feature-btn">Learn more</a>
+			<div class="feature-btn-underline red-underline"></div>
+		</div>
+		<div class="graphics cherry">
+			<h1 class="graphics__title">Graphic design</h1>
+			<p class="graphics__content">Great design makes you memorable. We deliver artwork that underscores your
+				brand message and captures potential
+				clients’ attention.</p>
+		</div>
+		<div class="graphics orange">
+			<h1 class="graphics__title">Photography</h1>
+			<p class="graphics__content">Increase your credibility by getting the most stunning, high-quality photos
+				that improve your business image.</p>
+		</div>
+	</section>
+	<section class="testimonials">
+		<h1 class="testimonials__title">Client testimonials</h1>
+		<div class="how-do-people-say">
+			<div class="person person1">
+				<blockquote>
+					<div><cite><img src="images/image-emily.jpg" alt="emily"></cite></div>
+					<p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
+						were
+						always hit.</p>
+				</blockquote>
+				<h5 class="person1--name">Emily R.</h5>
+				<h5 class="person1--job">Marketing Director</h5>
+			</div>
+			<div class="person person2">
+				<blockquote>
+					<div><cite><img src="images/image-thomas.jpg" alt="thomas"></cite></div>
+					<p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+						satisfying
+						and
+						enjoyable
+						experience.</p>
+				</blockquote>
+				<h5 class="person2--name">Thomas S.</h5>
+				<h5 class="person2--job">Chief Operating Officer</h5>
+			</div>
+			<div class="person person3">
+				<blockquote>
+					<div><cite><img src="images/image-jennie.jpg" alt="jennie"></cite></div>
+					<p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+						recommended!</p>
+				</blockquote>
+				<h5 class="person3--name">Jennie F.</h5>
+				<h5 class="person3--job">Business Owner</h5>
+			</div>
+		</div>
+	</section>
+	<div class="footer-img">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+<!-- ! Those tag in "footer-img" will have the background-image property, so DO NOT CHANGE OR REMOVE THEM-->
+	</div>
+	<footer>
+		<img src="images/footer-logo.svg" alt="logo" class="logo logo--footer">
+		<ul class="footer-nav">
+			<li>About</li>
+			<li>Services</li>
+			<li>Projects</li>
+		</ul>
+		<div class="contact-us">
+			<img src="images/icon-facebook.svg" alt="facebook">
+			<img src="images/icon-instagram.svg" alt="instagram">
+			<img src="images/icon-twitter.svg" alt="twitter">
+			<img src="images/icon-pinterest.svg" alt="pinterest">
+		</div>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://www.frontendmentor.io/profile/PXVC">PXVC</a>.
+		</div>
+	</footer>
+	<script src="main.js"></script>
+</body>
+
+</html>

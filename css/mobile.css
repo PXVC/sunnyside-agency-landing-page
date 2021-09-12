@@ -1,0 +1,237 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+@media screen and (max-width: 375px) {
+  header {
+    background: url("../images/mobile/image-header.jpg") center no-repeat;
+    background-size: 150%;
+  }
+  .desktop-nav-bar {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+    margin: 27px 20px;
+  }
+  .header-title {
+    font-size: 2em;
+    padding-top: 4.8em;
+  }
+  .header-arrow {
+    margin-top: 2em;
+  }
+  .header-arrow img {
+    margin-left: 10px;
+  }
+  .mobile-nav-bar {
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    margin-left: 19px;
+    margin-top: 20px;
+    background: #fff;
+    width: 331px;
+    height: 300px;
+    padding: 40px 0;
+    padding-top: 20px;
+    display: block;
+    opacity: 0;
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+    -webkit-transition: opacity 120ms ease-in, -webkit-transform 100ms ease-in;
+    transition: opacity 120ms ease-in, -webkit-transform 100ms ease-in;
+    transition: opacity 120ms ease-in, transform 100ms ease-in;
+    transition: opacity 120ms ease-in, transform 100ms ease-in, -webkit-transform 100ms ease-in;
+  }
+  .mobile-nav-bar li {
+    list-style: none;
+    padding: 15px 0;
+  }
+  .mobile-nav-bar li a {
+    text-decoration: none;
+    color: #818498;
+    font-family: 'Barlow', sans-serif;
+  }
+  .mobile-nav-bar::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 1.6rem solid transparent;
+    border-bottom: 1.3rem solid white;
+    position: relative;
+    top: -3.5em;
+    left: 151px;
+  }
+  .header-btn {
+    background: #fad400;
+    padding: .9rem 1.5rem;
+    font-size: .7em;
+    margin-top: 10px;
+  }
+  .header-btn:hover, .header-btn:active {
+    background: #fad400;
+    color: black;
+  }
+  .burger {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 99;
+    width: 6%;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+  }
+  .burger div {
+    background: url("../images/icon-hamburger.svg") no-repeat;
+    height: 8px;
+  }
+  .active {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: opacity 200ms ease, -webkit-transform 200ms;
+    transition: opacity 200ms ease, -webkit-transform 200ms;
+    transition: transform 200ms, opacity 200ms ease;
+    transition: transform 200ms, opacity 200ms ease, -webkit-transform 200ms;
+  }
+  .active + .burger .line1 {
+    -webkit-transform: rotate(-45deg) translate(-1px, 6px);
+            transform: rotate(-45deg) translate(-1px, 6px);
+  }
+  .active + .burger .line2 {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+    opacity: 0;
+  }
+  .active + .burger .line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .line2 {
+    -webkit-transition: opacity 300ms steps(3), -webkit-transform 0.6s;
+    transition: opacity 300ms steps(3), -webkit-transform 0.6s;
+    transition: transform 0.6s, opacity 300ms steps(3);
+    transition: transform 0.6s, opacity 300ms steps(3), -webkit-transform 0.6s;
+  }
+  .line1,
+  .line3 {
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms;
+  }
+  .features-grid {
+    margin-top: -68px;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+    -ms-grid-rows: 424px 384px 424px 384px 580px 580px;
+        grid-template-rows: 424px 384px 424px 384px 580px 580px;
+  }
+  .img-box {
+    display: none;
+  }
+  .img-box-mobile {
+    display: block;
+  }
+  .first-img-mobile {
+    background: url("../images/mobile/image-transform.jpg") center no-repeat;
+    height: 100%;
+    background-size: 100%;
+  }
+  .second-img-mobile {
+    background: url("../images/mobile/image-stand-out.jpg") center no-repeat;
+    height: 100%;
+    background-size: 100%;
+  }
+  .feature-box {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .box-title {
+    font-size: 29px;
+    padding: 20px;
+  }
+  .box-content {
+    width: 19.725em;
+    padding-left: 0px;
+  }
+  .feature-btn {
+    padding-left: 18px;
+  }
+  .feature-btn-underline {
+    margin-left: 100px;
+  }
+  .graphics {
+    text-align: center;
+  }
+  .cherry {
+    background: url("../images/mobile/image-graphic-design.jpg");
+    background-size: 100%;
+  }
+  .orange {
+    background: url("../images/mobile/image-photography.jpg");
+    background-size: 100%;
+  }
+  .graphics__content {
+    margin-left: -2px;
+    font-size: medium;
+  }
+  .how-do-people-say {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .how-do-people-say div {
+    margin-top: 20px;
+  }
+  .how-do-people-say div p {
+    width: 333px;
+  }
+  .footer-img {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 187.5px 187.5px;
+        grid-template-columns: 187.5px 187.5px;
+    -ms-grid-rows: 187.5px 187.5px;
+        grid-template-rows: 187.5px 187.5px;
+  }
+  .footer-img div {
+    background-size: 53% !important;
+    background-repeat: no-repeat !important;
+  }
+  .footer-img :nth-child(1) {
+    background: url("../images/mobile/image-gallery-milkbottles.jpg");
+  }
+  .footer-img :nth-child(2) {
+    background: url("../images/mobile/image-gallery-orange.jpg");
+  }
+  .footer-img :nth-child(3) {
+    background: url("../images/mobile/image-gallery-cone.jpg");
+  }
+  .footer-img :nth-child(4) {
+    background: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  .logo--footer {
+    width: 40%;
+    margin: 0;
+  }
+  .footer-nav {
+    margin-left: -40px;
+  }
+  .footer-nav li {
+    margin: 45px 27px;
+  }
+  .contact-us {
+    margin-left: -35px;
+  }
+  .attribution {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
